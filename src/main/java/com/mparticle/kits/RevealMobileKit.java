@@ -1,5 +1,6 @@
 package com.mparticle.kits;
 
+import android.app.Application;
 import android.content.Context;
 
 import com.mparticle.MParticle;
@@ -28,7 +29,7 @@ public class RevealMobileKit extends KitIntegration {
         } else {
             throw new IllegalArgumentException("No API Key provided");
         }
-        revealSDK.start(context);
+        revealSDK.start((Application)context.getApplicationContext());
         return null;
     }
 
