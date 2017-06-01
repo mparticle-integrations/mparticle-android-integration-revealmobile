@@ -14,7 +14,8 @@ public class RevealMobileKit extends KitIntegration {
     protected List<ReportingMessage> onKitCreate(Map<String, String> settings, Context context) {
         Reveal revealSDK = Reveal.getInstance();
         String apiKey = settings.get("apiKey");
-
+        String endpointBase = settings.get( "sdk_endpoint" );
+        
         if (MParticle.getInstance().getEnvironment().equals(MParticle.Environment.Development)) {
             revealSDK.setDebug(true);
         }
@@ -22,6 +23,8 @@ public class RevealMobileKit extends KitIntegration {
         if (apiKey != null) {
             revealSDK.setAPIKey(apiKey);
             revealSDK.setServiceType(Reveal.ServiceType.PRODUCTION);
+            if (endpointBase != null)
+                revealSDK.setAPIEndpointBase(endpointBase);
         } else {
             throw new IllegalArgumentException("No API Key provided");
         }

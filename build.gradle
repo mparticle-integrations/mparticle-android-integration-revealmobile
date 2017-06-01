@@ -17,5 +17,5 @@ android {
 }
 
 dependencies {
-    compile 'com.stepleaderdigital.reveal:reveal:1.3.14'
+    compile 'com.stepleaderdigital.reveal:reveal:1.3.29'
 }
