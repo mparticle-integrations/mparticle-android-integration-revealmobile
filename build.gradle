@@ -21,5 +21,5 @@ android {
 }
 
 dependencies {
-    compile 'com.stepleaderdigital.reveal:reveal:1.+'
+    compile 'com.stepleaderdigital.reveal:reveal:1.4.2'
 }
