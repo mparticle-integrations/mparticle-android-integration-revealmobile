@@ -9,7 +9,7 @@ This repository contains the [Reveal Mobile](http://www.revealmobile.com/) integ
     
     > If you would like to specify an explicit Reveal SDK version that you would like to use, add the following snipit to the `dependencies` section of you `build.gradle` file, after replacing {custom-version} with the explicit version number (i.e `1.3.31`)
     >
-    >       compile('com.mparticle:android-reveal-kit:4.15.3') {
+    >       compile('com.mparticle:android-reveal-kit:5.0.5') {
     >               exclude group: 'com.stepleaderdigital.reveal'
     >       }
     >       
