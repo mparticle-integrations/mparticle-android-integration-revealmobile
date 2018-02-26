@@ -22,5 +22,5 @@ android {
 }
 
 dependencies {
-    api 'com.stepleaderdigital.reveal:reveal:1.4.8'
+    api 'com.stepleaderdigital.reveal:reveal:1.4.20'
 }
