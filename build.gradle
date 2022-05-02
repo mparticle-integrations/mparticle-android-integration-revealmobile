@@ -17,11 +17,13 @@ buildscript {
 apply plugin: 'com.mparticle.kit'
 
 android {
+    compileSdk 30
     lintOptions {
         abortOnError false
     }
     defaultConfig {
         minSdkVersion 16
+        targetSdk 30
     }
 }
 
