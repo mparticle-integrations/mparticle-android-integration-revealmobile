@@ -34,6 +34,7 @@ apply plugin: 'com.mparticle.kit'
 apply plugin: 'kotlin-android'
 
 android {
+    namespace 'com.mparticle.kits.revealmobile'
     compileSdk 33
     lintOptions {
         abortOnError false
@@ -44,6 +45,13 @@ android {
     }
 }
 
+repositories {
+    flatDir {
+        dirs 'libs'
+    }
+}
+
 dependencies {
-    api 'com.stepleaderdigital.reveal:reveal:1.4.22'
+    api(name:'reveal-1.4.22-android12', ext:'aar')
+    //api 'com.stepleaderdigital.reveal:reveal:1.4.22'
 }
