@@ -54,12 +54,13 @@ repositories {
 dependencies {
     // Changed from 'api' to 'compileOnly' to avoid invalid POM issues
     compileOnly files('libs/reveal-1.4.22-android12.aar')
+    testImplementation files('libs/reveal-1.4.22-android12.aar')
 
     // If ever published as a proper Maven artifact, you can switch to:
     // api 'com.revealmobile:reveal:1.4.22'
 }
 
-// ✨ Remove invalid dependency blocks from the published POM
+// Remove invalid dependency blocks from the published POM
 afterEvaluate {
     publishing {
         publications {
