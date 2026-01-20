@@ -8,7 +8,7 @@ import com.stepleaderdigital.reveal.Reveal
 class RevealMobileKit : KitIntegration() {
     override fun onKitCreate(
         settings: Map<String, String>,
-        context: Context
+        context: Context,
     ): List<ReportingMessage> {
         val revealSDK = Reveal.getInstance()
         val apiKey = settings[API_KEY]
@@ -31,8 +31,7 @@ class RevealMobileKit : KitIntegration() {
 
     override fun setOptOut(optedOut: Boolean): List<ReportingMessage> = emptyList()
 
-
-    companion object{
+    companion object {
         private const val KIT_NAME = "Reveal Mobile"
         private const val NO_API_KEY_REQUIRED = "No API Key provided"
         private const val SDK_ENDPOINT = "sdk_endpoint"
