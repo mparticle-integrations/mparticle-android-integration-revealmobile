@@ -2,9 +2,12 @@ package com.mparticle.kits
 
 import android.content.Context
 import com.mparticle.MParticleOptions
+import com.mparticle.kits.KitIntegration
+import com.mparticle.kits.KitIntegrationFactory
 import org.junit.Assert
 import org.junit.Test
 import org.mockito.Mockito
+import java.util.HashMap
 
 class RevealMobileKitTests {
     private val kit: KitIntegration
